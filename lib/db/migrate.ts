@@ -26,7 +26,7 @@ const runMigrate = async () => {
 };
 
 runMigrate().catch((err) => {
-  console.error('❌ Migration failed');
+  console.error('Skip migration during build');
   console.error(err);
   process.exit(1);
 });
